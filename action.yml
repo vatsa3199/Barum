@@ -1,0 +1,12 @@
+   name: 'Barum GitHub Action'
+   description: 'A custom GitHub action that greets a user.'
+   inputs:
+     name:
+       description: 'The name to greet'
+       required: true
+   outputs:
+     greeting:
+       description: 'The greeting message'
+   runs:
+     using: 'node20'
+     main: 'dist/index.js'
